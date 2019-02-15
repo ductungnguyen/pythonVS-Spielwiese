@@ -3,12 +3,15 @@ Definition of urls for DjangoLernen.
 """
 
 from django.conf.urls import include, url
+import Applikation1.views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = [
+    url(r'^$', Applikation1.views.index, name='index'),
+    url(r'^home$', Applikation1.views.index, name='home'),
     # Examples:
     # url(r'^$', DjangoLernen.views.home, name='home'),
     # url(r'^DjangoLernen/', include('DjangoLernen.DjangoLernen.urls')),
