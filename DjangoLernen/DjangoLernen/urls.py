@@ -12,6 +12,7 @@ import Applikation1.views
 urlpatterns = [
     url(r'^$', Applikation1.views.index, name='index'),
     url(r'^home$', Applikation1.views.index, name='home'),
+    url(r'^about$', Applikation1.views.about, name='about'),
     # Examples:
     # url(r'^$', DjangoLernen.views.home, name='home'),
     # url(r'^DjangoLernen/', include('DjangoLernen.DjangoLernen.urls')),

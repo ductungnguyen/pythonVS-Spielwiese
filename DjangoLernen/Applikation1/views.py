@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
 
-# Baisc view without render.
+# Basic view without render.
 
 #def index(request):
 #    now=datetime.now()
@@ -23,8 +23,17 @@ def index(request):
         "Applikation1/index.html",  # RELATIVE path from the 'templates' folder to the template file
         # "index.html", # Use this code for VS 2017 15.7 and earlier
         {
-            'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X"),
-            'message': "Nachricht: "
+            'content': '<strong>Hello Django!</strong> on ' + now.strftime("%A, %d %B, %Y at %X"),
+            'message': 'Nachricht: '
         }
     )
 
+def about(request):
+    return render(
+        request,
+        "Applikation1/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )
