@@ -1,0 +1,15 @@
+pkg_resources
+locmem
+cached
+__spec__
+__file__
+__future__
+__package__
+__name__
+eggs
+filesystem
+app_directories
+__builtins__
+__cached__
+base
+__path__
