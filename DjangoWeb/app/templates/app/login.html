@@ -8,7 +8,7 @@
         <section id="loginForm">
             <form action="." method="post" class="form-horizontal">
                 {% csrf_token %}
-                <h4>Benutzen ein lokales Konto zum Einloggen.</h4>
+                <h4>Benutzen Sie ein lokales Konto zum Einloggen.</h4>
                 <hr />
                 <div class="form-group">
                     <label for="id_username" class="col-md-2 control-label">Benutzername</label>
@@ -25,11 +25,11 @@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                         <input type="hidden" name="next" value="/" />
-                        <input type="submit" value="Log in" class="btn btn-default" />
+                        <input type="submit" value="Einloggen" class="btn btn-default" />
                     </div>
                 </div>
                 {% if form.errors %}
-                <p class="validation-summary-errors">Bitte gueltigen Benutzernamen und Passwort eingeben</p>
+                <p class="validation-summary-errors">Bitte geben Sie einen g&uuml;ltigen Benutzernamen und Passwort ein</p>
                 {% endif %}
             </form>
         </section>
