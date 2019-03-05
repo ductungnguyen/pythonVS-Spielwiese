@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /DjangoLernen/env
+/DjangoPolls/env_for_DjangoPolls

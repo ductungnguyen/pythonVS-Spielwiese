@@ -100,6 +100,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env_for_DjangoPolls\">
+      <Id>env_for_DjangoPolls</Id>
+      <Version>3.7</Version>
+      <Description>env_for_DjangoPolls (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="Spielwiese-Umgebung\">
       <Id>Spielwiese-Umgebung</Id>
       <Version>3.7</Version>
